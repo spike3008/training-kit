@@ -6,10 +6,7 @@
 
 .curriculum {
   position: relative;
-  /* General external link */
-  /* GitHub Links */
-  /* GitHub Book Links, Guide Links */
-  /* YouTube Links */ }
+}
   .curriculum img {
     width: 100%;
     height: auto; }
@@ -110,3 +107,5 @@
 
 .affix {
   margin-top: -145px; }
+  
+  /* some text on other branch */
