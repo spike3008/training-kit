@@ -1,4 +1,7 @@
-@import "octicons.css";
+---
+---
+
+@import "bootstrap-sass/lib/bootstrap.scss";
 
 /* Color Definitions */
 $color-dark: #1875c6;
@@ -7,6 +10,17 @@ $mono-dark: #222222;
 $mono-light: #f3f3f3;
 $mono-medium: #5a5a5a;
 $mono-bright: #ffffff;
+
+//
+table{
+	@extend .table;
+	@extend .table-striped;
+	@extend .table-bordered;
+}
+
+iframe[src^="//player.vimeo"]{
+	width: 100%;
+}
 
 .jumbotron{
 	&.classes{
@@ -139,7 +153,8 @@ header{
 		width: 185px;
 		text-indent: -999px;
 		overflow: hidden;
-		background: url('../images/gh-training-logo-1x.png') no-repeat center center;
+		background: url('../images/gh-training-logo-2x.png') no-repeat center center;
+		background-size: contain;
 	}
 }
 
@@ -173,5 +188,34 @@ footer {
 		li:first-child {
 			margin-left: 0;
 		}
+	}
+}
+
+
+.cheat-sheet{
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+
+	-webkit-column-gap: 4em;
+  -moz-column-gap: 4em;
+  column-gap: 4em;
+
+	h1, h1+p{
+		display: none;
+	}
+
+	h2:first-of-type{
+		margin-top: 0;
+	}
+
+	h2:last-of-type{
+		-webkit-column-span: all;
+		-moz-column-span: all;
+		column-span: all;
+
+		padding-top: 1em;
+		margin-top: 1em;
+		border-top: solid 1px $mono-light;
 	}
 }
